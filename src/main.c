@@ -1,7 +1,6 @@
 #include <uefi.h>
 
-#include "utils.h"
-#include "shell.h"
+#include "shell/shell.h"
 
 
 int main (int argc, char **argv) 
@@ -11,7 +10,6 @@ int main (int argc, char **argv)
     shell_line(buffer);
     printf("%s\n", buffer);
   }
-
   return 0;
 }
 
