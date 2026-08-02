@@ -1,13 +1,8 @@
 #include <uefi.h>
 #include <string.h>
 
+#include "utils.h"
 
-
-static inline void hang() {
-  while (1) {
-    __asm__ __volatile__("hlt");
-  }
-}
 
 
 int main (int argc, char **argv) 
