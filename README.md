@@ -49,6 +49,7 @@ To do this:
 3. `cp -r disk/* /path/to/your/fat32/partition/`
 4. Reboot your computer and load into the boot menu.
 5. Ensure your device supports UEFI (if it doesn't, you cant run it).
-6. Check your motherboard manual for the above step.
-7. Choose the storage device that the partition is in.
+6. Make sure Secure Boot  is turned off.
+7. Check your motherboard manual for the above step.
+8. Choose the storage device that the partition is in.
 
