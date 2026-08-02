@@ -46,9 +46,7 @@ To do this:
 
 1. Create a preferably empty FAT32 partition on any storage device.
 2. Mount the partition in an empty directory.
-3. ```sh
-cp -r disk/* /path/to/your/fat32/partition/
-```
+3. `cp -r disk/* /path/to/your/fat32/partition/`
 4. Reboot your computer and load into the boot menu.
 5. Ensure your device supports UEFI (if it doesn't, you cant run it).
 6. Check your motherboard manual for the above step.
