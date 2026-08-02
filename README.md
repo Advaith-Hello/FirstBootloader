@@ -1,6 +1,7 @@
 # What is this?
 This is a basic UEFI bootloader with a shell that simply echoes back what you type.
-![Image of UEFI bootloader](https://imgur.com/a/87aeIuq)
+
+![Image of the UEFI bootloader](images/screenshot.png)
 
 # Installation
 ## Setup
