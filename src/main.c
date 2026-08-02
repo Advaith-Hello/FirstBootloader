@@ -8,9 +8,7 @@ int main (int argc, char **argv)
 {
   while (1) {
     char buffer[512] = {0};
-    printf("$ ");
-    read_line(buffer, sizeof(buffer));
-    printf("\n");
+    shell_line(buffer);
     printf("%s\n", buffer);
   }
 
