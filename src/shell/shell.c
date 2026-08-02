@@ -1,10 +1,9 @@
 #include <uefi.h>
 
 
-int read_line(char *buffer)
+int read_line(char *buffer, size_t buffer_len)
 {
   int i = 0;
-  int buffer_len = sizeof(buffer);
 
   while (i < buffer_len)
   {
@@ -24,10 +23,10 @@ int read_line(char *buffer)
 }
 
 
-int shell_line(char *buffer)
+int shell_line(char *buffer, size_t buffer_len)
 {
   printf("$ ");
-  int status = read_line(buffer);
+  int status = read_line(buffer, buffer_len);
   printf("\n");
   return status;
 }
