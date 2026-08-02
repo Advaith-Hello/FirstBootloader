@@ -1,5 +1,5 @@
 SRCS = $(wildcard src/*.c)
-TARGET = bin/BOOTX64.EFI
+TARGET = disk/EFI/BOOT/BOOTX64.EFI
 
 include uefi/Makefile
 
