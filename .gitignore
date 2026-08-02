@@ -4,3 +4,4 @@ disk/*
 *.o
 *.so
 
+uefi
