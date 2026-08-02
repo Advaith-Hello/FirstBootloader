@@ -1,33 +1,19 @@
 #include <uefi.h>
-#include <string.h>
 
 #include "utils.h"
-
+#include "shell.h"
 
 
 int main (int argc, char **argv) 
 {
-  int i = 0;
-  char buffer[256];
-  printf("What is your name: ");
-  
-  while (1)
-  {
-    int key = getchar_ifany();
-
-    if (key) {
-      const char c = (char)key;
-      if (c == '\r') {break;}
-      printf("%c", c);
-      buffer[i] = c;
-      i += 1;
-    }
+  while (1) {
+    char buffer[512] = {0};
+    printf("$ ");
+    read_line(buffer, sizeof(buffer));
+    printf("\n");
+    printf("%s\n", buffer);
   }
 
-  printf("\n");
-  printf("Hello, %s", buffer);
-
-  hang();
   return 0;
 }
 
